@@ -58,4 +58,12 @@ static NetworkUtility *_instance = nil;
 @synthesize data;
 @synthesize response;
 
+-(id)jsonObject {
+    NSError *error = nil;
+    id json = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:&error];
+    if (error) return error;
+    
+    return json;
+}
+
 @end

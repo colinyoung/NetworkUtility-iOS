@@ -13,6 +13,8 @@
 @property (nonatomic,strong) NSData *data;
 @property (nonatomic,strong) NSHTTPURLResponse *response;
 
+-(id)jsonObject;
+
 @end
 
 @protocol AbstractNetworkUtilityDelegate
