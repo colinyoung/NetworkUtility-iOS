@@ -8,7 +8,7 @@
 
 #import "RemoteNetworkUtility.h"
 #import "HttpUserCredentials.h"
-#import "JSONKit.h"
+//#import "JSONKit.h" /* JSONKit doesn't support ARC, and besides, this library already uses NSJSONSerialization elsewhere. */
 
 #define DEBUG_MODE  1
 #define TIMEOUT     30.0
